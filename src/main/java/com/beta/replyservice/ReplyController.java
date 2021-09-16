@@ -13,7 +13,6 @@ import com.beta.replyservice.util.MD5HashAlgorithm;
 public class ReplyController {
 
 	private static final Charset UTF_8 = StandardCharsets.UTF_8;
-	private static final String OUTPUT_FORMAT = "%-20s:%s";
 
 	@GetMapping("/v1/reply")
 	public ReplyMessage replyingV1() {
@@ -50,6 +49,7 @@ public class ReplyController {
 			} else {
 				return new ReplyMessage("Invalid Input", 400);
 			}
+			//We Can More else if conditions to add new rules with out disturbing existing rules with minimal changes.
 		}
 		return new ReplyMessage(input, 200);
 	}

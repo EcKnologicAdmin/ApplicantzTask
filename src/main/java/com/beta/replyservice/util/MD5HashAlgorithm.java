@@ -3,6 +3,11 @@ package com.beta.replyservice.util;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/**
+ * 
+ * @author Harish Kalepu 09-16-2021
+ *
+ */
 public class MD5HashAlgorithm {
 	
     public static byte[] digest(byte[] input) {
